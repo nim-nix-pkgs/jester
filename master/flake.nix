@@ -11,7 +11,6 @@
   inputs.src-jester-master.ref   = "refs/heads/master";
   inputs.src-jester-master.owner = "dom96";
   inputs.src-jester-master.repo  = "jester";
-  inputs.src-jester-master.dir   = "";
   inputs.src-jester-master.type  = "github";
   
   inputs."httpbeast".owner = "nim-nix-pkgs";

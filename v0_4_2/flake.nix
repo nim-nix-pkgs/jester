@@ -11,7 +11,6 @@
   inputs.src-jester-v0_4_2.ref   = "refs/tags/v0.4.2";
   inputs.src-jester-v0_4_2.owner = "dom96";
   inputs.src-jester-v0_4_2.repo  = "jester";
-  inputs.src-jester-v0_4_2.dir   = "";
   inputs.src-jester-v0_4_2.type  = "github";
   
   inputs."httpbeast".owner = "nim-nix-pkgs";
@@ -21,6 +20,14 @@
   inputs."httpbeast".type  = "github";
   inputs."httpbeast".inputs.nixpkgs.follows = "nixpkgs";
   inputs."httpbeast".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."github.com/timotheecour/asynctools".owner = "nim-nix-pkgs";
+  inputs."github.com/timotheecour/asynctools".ref   = "master";
+  inputs."github.com/timotheecour/asynctools".repo  = "github.com/timotheecour/asynctools";
+  inputs."github.com/timotheecour/asynctools".dir   = "";
+  inputs."github.com/timotheecour/asynctools".type  = "github";
+  inputs."github.com/timotheecour/asynctools".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github.com/timotheecour/asynctools".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
